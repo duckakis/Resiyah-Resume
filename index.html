@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Resiyah</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .header, .section {
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .header img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            transition: transform 0.3s ease;
+            animation: bounceIn 1s ease-in-out;
+        }
+        .header img:hover {
+            transform: scale(1.1);
+        }
+        .header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        .header p {
+            margin: 5px 0;
+        }
+        .section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+            animation: slideInLeft 1s ease-in-out;
+        }
+        .section h2:hover {
+            color: #f76c6c;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+            opacity: 0;
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+        .section ul li:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+        .section ul li:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+        .section ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #f76c6c;
+            font-size: 1.2em;
+        }
+        .section img {
+            margin-top: 10px;
+            border-radius: 10px;
+            transition: opacity 0.3s ease;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .section img:hover {
+            opacity: 0.8;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounceIn {
+            0%, 20%, 40%, 60%, 80%, 100% {
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            }
+            0% {
+                opacity: 0;
+                transform: scale3d(.3, .3, .3);
+            }
+            20% {
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+            40% {
+                transform: scale3d(.9, .9, .9);
+            }
+            60% {
+                opacity: 1;
+                transform: scale3d(1.03, 1.03, 1.03);
+            }
+            80% {
+                transform: scale3d(.97, .97, .97);
+            }
+            100% {
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="mamah.jpeg" alt="Photo of Resiyah">
+            <h1>Resiyah</h1>
+            <p>Alamat: Kelapa Dua, Kebon Jeruk, Jakarta Barat</p>
+            <p>No Telp: +62 896-3739-3719</p>
+            <p>T/TL: Purwokerto / 5 February 1971</p>
+        </div>
+        
+        <div class="section">
+            <h2>Pengalaman Menjadi Juri</h2>
+            <ul>
+                <li>Menjadi juri dalam acara bergengsi Festival Olahraga Rakyat 2024 sebanyak 2 kali.</li>
+                <li>Memiliki pengetahuan mendalam mengenai tolak ukur penjurian serentak dan beregu, memastikan keadilan dan objektivitas dalam setiap kompetisi.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Sertifikat</h2>
+            <ul>
+                <li>
+                    Yayasan Jantung Indonesia - Pendidikan Pelatihan Klub Jantung Sehat
+                    <br><img src="Pendidikan Pelatihan Klub Jantung Sehat.jpeg" alt="Sertifikat 1" width="200">
+                </li>
+                <li>
+                    Yayasan Jantung Indonesia - Pendidikan Pelatihan Dasar Klub Jantung Sehat
+                    <br><img src="Pendidikan Pelatihan Dasar Klub Jantung Sehat.jpeg" alt="Sertifikat 2" width="200">
+                </li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Senam yang Dikuasai</h2>
+            <ul>
+                <li>Senam Baku (gerakanya mirip dengan Senam Pekerja)</li>
+                <li>Senam Jantung Seri 1 sampai 6</li>
+                <li>Senam Ayo Bersatu</li>
+                <li>Senam Pramuka</li>
+                <li>Senam PGRI</li>
+                <li>Senam Aerobik Dasar</li>
+                <li>Senam SKJ</li>
+                <li>Senam Kicir Kicir</li>
+                <li>Senam Poco Poco</li>
+                <li>Senam Kreasi</li>
+                <li>Senam Line Dance</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Aktivitas Senam</h2>
+            <ul>
+                <li>Aktif berpartisipasi dalam senam rutin sejak tahun 2004 hingga sekarang, menunjukkan dedikasi dan komitmen yang kuat terhadap kesehatan dan kebugaran.</li>
+                <li>Saat ini, rutin menjadi instruktur senam sebanyak 2 kali dalam seminggu, membimbing peserta dengan semangat dan keahlian.</li>
+                <li>Senam hampir setiap hari, menjaga tubuh tetap bugar dan siap menghadapi tantangan baru.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Pendidikan</h2>
+            <p>SGO (Sekolah Guru Olahraga) 1988 - 1991</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('.header, .section');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
